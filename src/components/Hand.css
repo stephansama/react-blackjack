@@ -1,0 +1,31 @@
+#hand {
+	display: flex;
+	flex-flow: column;
+}
+
+#handCards {
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 auto;
+}
+
+#title {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px;
+	width: 50%;
+	margin: 0 auto;
+}
+
+#title > span {
+	padding: 30px;
+	background-color: black;
+	color: white;
+}
+
+#playerName {
+	border-radius: 10px;
+}
+
+.pokerchip {
+}

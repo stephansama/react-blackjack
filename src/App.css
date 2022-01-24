@@ -1,0 +1,20 @@
+#main {
+	background-color: green;
+	color: black;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#controls {
+	display: flex;
+	justify-content: center;
+	padding: 25px;
+}
+
+#controls > button {
+	border: none;
+	cursor: pointer;
+	padding: 20px;
+}

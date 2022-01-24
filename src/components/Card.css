@@ -1,0 +1,26 @@
+#cardContainer {
+	width: fit-content;
+	display: grid;
+	height: 150px;
+	left: -50px;
+}
+
+.hiddenBackground {
+	height: 150px;
+}
+
+.hiddenBackground,
+img {
+	grid-column: 1;
+	grid-row: 1;
+}
+
+.hiddenBackground {
+	background-color: black;
+	z-index: 1;
+}
+
+img {
+	height: 150px;
+	z-index: 0;
+}
