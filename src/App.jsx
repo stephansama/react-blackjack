@@ -55,6 +55,7 @@ const App = () => {
 		return true
 	}
 
+	// TODO:
 	const onHit = (e) => {
 		e.preventDefault()
 		const [newPlayerCards, newDeck] = pullCard()
