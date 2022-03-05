@@ -20,6 +20,7 @@ const App = () => {
 	console.log(React)
 
 	// pull a card from the deck and return a new deck and the pulled cards
+	// TODO: change pull card mechanism
 	const pullCard = (funcDeck = deck, numOfCards = 1) => {
 		const [tempPlayer, tempDeck] = [[], funcDeck]
 		for (let i = 0; i < numOfCards; i++) tempPlayer.push(tempDeck.shift())
@@ -27,11 +28,8 @@ const App = () => {
 	}
 
 	// calculate the value of a player based on their cards
-	const calculateValue = (player) => {
-		let pVal = 0
-		player.forEach((elem) => (pVal += elem.value))
-		return pVal
-	}
+	const calculateValue = (player) =>
+		player.reduce((total, curr) => total + curr.value, 0)
 
 	// open Modal
 	const openModal = () => {
@@ -41,6 +39,7 @@ const App = () => {
 		setModalOpen(false)
 	}
 
+	// TODO: change logic here
 	const checkWinConditions = (funcDealerVal = dealerVal) => {
 		if (funcDealerVal > 21) {
 			alert('You have won')
